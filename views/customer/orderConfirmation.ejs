@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="/css/customerStyle.css">
+  </head>
+  <body>
+    <%- include("../partials/customerNavBar") %>
+
+    <audio controls autoplay loop>
+        <source src = "/sound/santa-moving-sound.mp3" type = "audio/mpeg">
+    </audio>
+    <img id ="santaAnimation" src= "">
+
+    <div class = "pageContainer">
+      <div id = "thankYouCard">
+        <h1>Thank you for your order!</h1>
+        <p>It will be ready shortly</p>
+      </div>
+
+      <div id = "confirmButtonContainer">
+        <div class = "confirmPageButtons"><a href="../index">Exit</a></div>
+        <div class = "confirmPageButtons"><a href="customerHome">Next Order</a></div>
+      </div>
+
+    </div>
+
+    <script src = "/js/customerHandler.js"></script> 
+  </body>
+</html>
